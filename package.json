@@ -1,0 +1,29 @@
+{
+  "name": "team_profile",
+  "description": "A team profile generator for a company",
+  "version": "1.0.0",
+  "main": "team.js",
+  "scripts": {
+    "test": "node team.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chelle77322/team_profile.git"
+  },
+  "keywords": [
+    "Generating",
+    "a",
+    "html",
+    "page",
+    "with",
+    "a",
+    "team",
+    "profile"
+  ],
+  "author": "Michelle Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chelle77322/team_profile/issues"
+  },
+  "homepage": "https://github.com/Chelle77322/team_profile#readme"
+}
