@@ -1,11 +1,10 @@
 const standard_employee = require("./standard_employee");
 
-class manager extends standard_employee {
-    constructor(name, id, department, email, officeNumber, floorLevel) {
+class line_manager extends standard_employee {
+    constructor(name, id, email, officeNumber, floorLevel) {
         super(name, id, email);
         this.floorLevel = floorLevel;
         this.officeNumber = officeNumber;
-        this.department = department;
         
     }
     getfloorLevel(){
@@ -14,9 +13,6 @@ class manager extends standard_employee {
     getOfficeNumber() {
         return this.officeNumber;
     }
-    getDepartment() {
-        return this.department;
-    }
 }
 
-module.exports = manager;
+module.exports = line_manager;
