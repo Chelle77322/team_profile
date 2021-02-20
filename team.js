@@ -55,8 +55,8 @@ let employees = [];
 
 // Calling an asynchronised function to add a new member to an existing role within the company
 async function addRole(member) {
-    let { name } = await inquirer.prompt(required.item(member, "name", "full name", validate.name));//awaiting user input via inquirer after prompting for it
-    let { id } = await inquirer.prompt(required.item(member, "id", "ID number", validate.id));
+    let { name } = await inquirer.prompt(userInput.item(member, "name", "full name", validate.name));//awaiting user input via inquirer after prompting for it
+    let { id } = await inquirer.prompt(userInput.item(member, "id", "ID number", validate.id));
     let { email } = await inquirer.prompt(required.item(member, "email", "email address", validate.email));
     let {classification} = await inquirer.prompt(required.item(member,"classification", validate.classification));
     
