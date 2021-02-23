@@ -1,24 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <style>
-        body { margin-bottom: 2em; }
-        .card { margin-bottom: 2em; }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Staff Team</title>
+      <!--Calling javascript-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!--Calling Moment for time and date-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--Stylesheets start here-->  
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+      <!--Font Awesome-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+       <link rel = "stylesheet" href = "../assets/css/style.css"/>
+   
+  </head>
+  <body>
     <div class="jumbotron text-center">
-        <h1>My Team</h1>
+      <h1 class="h1">Department</h1>
     </div>
-    <div class="container">
-        <div class="row">
-            {% employees %}
-        </div>
+    <div class="container" id = "team">
+      <div class="row" class = "cards">
+        <script>
+          var col = $('<div class="col-4">');
+          var card = $('<div class="card mx-auto border-info mb-3" style="max-width: 18rem;">');
+          var header1 = $('<div class="card-header text-center h4">');
+          header1.text("Manager");
+          var header2 = $('<div class="card-header text-center">');
+          var icon = $('<i class="fas fa-users">');
+          header2.text(" Manager");
+          header2.prepend(icon);
+
+          var cardBody = $('<div class="card-body text-info">');
+          var cardTitle = $('<h5 class="card-title">');
+          cardTitle.text("Employee Information:");
+          var cardText = $('<p class="card-text">');
+          cardText.text("ID: 01");
+          var cardText2 = $('<p class="card-text">');
+          cardText2.text("Email: manager@gmail.com");
+          var cardText3 = $('<p class="card-text">');
+          cardText3.text("Office #: 101");
+          cardBody.append(cardTitle);
+          cardBody.append(cardText);
+          cardBody.append(cardText2);
+          cardBody.append(cardText3);
+  
+          card.append(header1);
+          card.append(header2);
+          card.append(cardBody);
+          col.append(card);
+          $("#cards").append(col);    
+          </script>        
+          
+          <script>
+          var col = $('<div class="col-4">');
+          var card = $('<div class="card mx-auto border-info mb-3" style="max-width: 18rem;">');
+          var header1 = $('<div class="card-header text-center h4">');
+          header1.text("Engineer");
+          var header2 = $('<div class="card-header text-center">');
+          var icon = $('<i class="fas fa-cogs">');
+          header2.text(" Engineer");
+          header2.prepend(icon);
+
+          var cardBody = $('<div class="card-body text-info">');
+          var cardTitle = $('<h5 class="card-title">');
+          cardTitle.text("Employee Information:");
+          var cardText = $('<p class="card-text">');
+          cardText.text("ID: 02");
+          var cardText2 = $('<p class="card-text">');
+          cardText2.text("Email: engineer@icloud.com");
+          var cardText3 = $('<p class="card-text">');
+          cardText3.text("Github: kqarlos");
+          cardBody.append(cardTitle);
+          cardBody.append(cardText);
+          cardBody.append(cardText2);
+          cardBody.append(cardText3);
+  
+          card.append(header1);
+          card.append(header2);
+          card.append(cardBody);
+          col.append(card);
+          $("#cards").append(col);    
+          </script>        
+          
+          <script>
+          var col = $('<div class="col-4">');
+          var card = $('<div class="card mx-auto border-info mb-3" style="max-width: 18rem;">');
+          var header1 = $('<div class="card-header text-center h4">');
+          header1.text("Intern");
+          var header2 = $('<div class="card-header text-center">');
+          var icon = $('<i class="fas fa-user-graduate">');
+          header2.text(" Intern");
+          header2.prepend(icon);
+
+          var cardBody = $('<div class="card-body text-info">');
+          var cardTitle = $('<h5 class="card-title">');
+          cardTitle.text("Employee Information:");
+          var cardText = $('<p class="card-text">');
+          cardText.text("ID: 02");
+          var cardText2 = $('<p class="card-text">');
+          cardText2.text("Email: intern@outlook.com");
+          var cardText3 = $('<p class="card-text">');
+          cardText3.text("School: SJSU");
+          cardBody.append(cardTitle);
+          cardBody.append(cardText);
+          cardBody.append(cardText2);
+          cardBody.append(cardText3);
+  
+          card.append(header1);
+          card.append(header2);
+          card.append(cardBody);
+          col.append(card);
+          $("#cards").append(col);    
+          </script>        
+          
+          
+      </div>
     </div>
-</body>
+  
+
+  </body>
 </html>
