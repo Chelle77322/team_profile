@@ -3,18 +3,17 @@
   "description": "A team profile generator for a company",
   "version": "1.0.0",
   "main": "start.js",
-  "directories":{
+  "directories": {
     "lib": "lib",
     "test": "test"
   },
   "scripts": {
-   "test": "jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Chelle77322/team_profile.git"
   },
-  
   "keywords": [
     "employee",
     "profile",
@@ -37,5 +36,4 @@
     "jest": "^26.6.3",
     "repl": "^0.1.3"
   }
- 
 }
