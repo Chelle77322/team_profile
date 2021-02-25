@@ -1,11 +1,48 @@
 body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
     margin-bottom: 2em;
+    
   }
-  .card {
+  .container{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+      font-size: 2em;
+      color: #dbeede;
+    
+  }
+  .jumbotron{
+    background-color: #335238;
+  }
+  .startcard {
     margin-bottom: 2em;
+    background-color:#335238 ;
+    border-radius: 5%;
+    border-style: inset;
+    border-color: #162218;
   }
+  /*Font specifications used*/
   .h1{
       font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-      font-size: 2em;
+      font-size: 3em;
+      color:#dbeede;
+  }
+  .card-title{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+      font-size: 20px;
+      color: #0b140c;
+      background-origin: inherit;
+
+  }
+  .p.card-text{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    color: #0b140c;
+
+  }
+  .card-text{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+      font-size: 14px;
+      color: #0b140c;
 
   }
