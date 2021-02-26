@@ -13,8 +13,9 @@ body {
   }
   .jumbotron{
     background-color: #335238;
+    
   }
-  .startcard {
+  .card {
     margin-bottom: 2em;
     background-color:#335238 ;
     border-radius: 5%;
@@ -26,6 +27,7 @@ body {
       font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
       font-size: 3em;
       color:#dbeede;
+      text-align: center;
   }
   .card-title{
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
@@ -34,15 +36,20 @@ body {
       background-origin: inherit;
 
   }
-  .p.card-text{
+  .card-header {
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-    font-size: 14px;
-    color: #0b140c;
-
+      font-size: 18px;
+      color: #162218;
   }
   .card-text{
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
       font-size: 14px;
       color: #0b140c;
+
+  }
+  .a{
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+      font-size: 14px;
+      color:#dbeede;
 
   }
