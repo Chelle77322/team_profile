@@ -25,7 +25,7 @@ This application is covered by the MIT license.
 
 ## Video
 ![Video of team_profile](./assets/images/Team_Profile Generator.gif)<hr>
-![Video of tests and failures](.assets/images/test and fails.gif)<hr<
+![Video of tests and failures](.assets/images/test and fails.gif)<hr>
 ![Video of full mp4](./assets/images/Team_Profile.mp4)
 
 ## Screenshot
