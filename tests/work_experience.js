@@ -8,12 +8,12 @@ test("Set University or TAFE through constructor", () => {
 
 test("getRole() should return \"work_experience\"", () => {
   const testValue = "work_experience";
-  const Emp = new intern("Foo", 1, "j.smith@test.sa.edu.au", "UCLA");
+  const Emp = new intern("Foo", 1, "test@test.com.au");
   expect(Emp.getRole()).toBe(testValue);
 });
 
 test("Accessing school throughh the function getSchool()", () => {
   const testValue = "University of Adelaide";
-  const Emp = new work_experience("Foo", 1, "test@test.com", testValue);
+  const Emp = new work_experience("Foo", 1, "test@test.com.au", testValue);
   expect(Emp.getSchool()).toBe(testValue);
 });

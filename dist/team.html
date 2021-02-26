@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome CSS Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <!-- My stylesheets -->
+  
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+
+    <title>Employment Team Generator</title>
+</head>
+
+<body>
+  <div class = "jumbotron">
+    <h1 class = "h1">Employment Team Generator  🏢 </h1>
+  </div>
+
+    <div class="container" id="team">
+        <div class="row">
+            <div class="col-12"></div>
+        </div>
+        <div class="row" id="card">
+            
+
+        </div>
+
+
+    </div>
+
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+                <script>
+                var col = $('<div class="col-4">');
+                var card = $('<div class="card mx-auto border-info mb-3" style="max-width: 18rem;">');
+                var header1 = $('<div class="card-header text-center h4">');
+                header1.text("Saoirse Hall");
+                var header2 = $('<div class="card-header text-center">');
+                
+                header2.text(" manager");
+              
+                var cardBody = $('<div class="card-body text-info">');
+                var cardTitle = $('<h5 class="card-title">');
+                cardTitle.text("Employee Information:");
+                var cardText = $('<p class="card-text">');
+                cardText.text("ID: 125");
+                var cardText2 = $('<p class="card-text">');
+                cardText2.text("Email: s.hall@themanager.com.au");
+                var cardText3 = $('<p class="card-text">');
+                cardText3.text("Department: undefined");
+                var cardText4 = $('<p class="card-text">');
+                cardText4.text("Department: undefined");
+                var cardText5 = $('<p class="card-text">');
+                cardText5.text("Classification: undefined");
+
+                var cardText6 = $('<p class="card-text">');
+                cardText6.text = ("Department: undefined");
+
+
+
+
+                cardBody.append(cardTitle);
+                cardBody.append(cardText);
+                cardBody.append(cardText2);
+                cardBody.append(cardText3);
+        
+                card.append(header1);
+                card.append(header2);
+                card.append(cardBody);
+                col.append(card);
+                $("#card").append(col);    
+                </script>        
+                
+
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

@@ -19,8 +19,20 @@ test("Setting id value via constructor", () => {
 
 test("Setting email via constructor", () => {
   const value = "j.smith@test.com.au";
-  const Emp = new Employee("Foo", 1, value);
+  const Emp = new standard_employee("Foo", 1, value);
   expect(Emp.email).toBe(value);
+});
+
+test("Setting classification via constructor", () => {
+  const value = "ASO 00";
+  const Emp = new standard_employee("Foo", 1,value);
+  expect(Emp.classification).toBe(value);
+});
+
+test("Setting Office Phone Number via constructor", () => {
+  const value = 00000000;
+  const Emp = new standard_employee("Foo", 1,value);
+  expect(Emp.officeNumber).toBe(value);
 });
 
 test("Accessing name through function getName()", () => {
@@ -41,8 +53,21 @@ test("Accessing email through function getEmail()", () => {
   expect(Emp.getEmail()).toBe(value);
 });
 
+
+test("Accessing Classification", () => {
+  const value = "ASO 00";
+  const Emp = new standard_employee("Joanne Smith", 1,value);
+  expect(Emp.getClassification()).toBe(value);
+});
+
+test("Accessing Office Number", () => {
+  const value = 0000-0000;
+  const Emp = new standard_employee("Joanne Smith", 1, value);
+  expect(Emp.getOfficeNumber()).toBe(testValue);
+});
+
 test("getRole() should return \"standard_employee\"", () => {
   const value = "standard_employee";
-  const Emp = new standard_employee("Joanne Smith", 1, "j.smith@test.com.au");
+  const Emp = new standard_employee("Joanne Smith", 1,"j.smith@test.test.com.au");
   expect(Emp.getRole()).toBe(value);
 });
