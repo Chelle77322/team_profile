@@ -9,6 +9,8 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Video](#video)
+- [Screenshot](#screenshot)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -20,6 +22,15 @@
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 <br />
 This application is covered by the MIT license. 
+
+## Video
+![Video of team_profile](./assets/images/Team_Profile Generator.gif)<hr>
+![Video of tests and failures](.assets/images/test and fails.gif)<hr<
+![Video of full mp4](./assets/images/Team_Profile.mp4)
+
+## Screenshot
+![Image of generated web page](./assets/images/web_page_result.jpg)<hr>
+![Image of email working default app](./assets/images/show_email.jpg)
 
 ## Contributing
 
